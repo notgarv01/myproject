@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: ;
+    padding: 20% 40%;
+}
+#banner{
+    font-size: 100px;
+}
+#clock{margin-top: 5%;
+    background-color: #fff;
+    height: 60%;
+    width: 90%;
+    padding: 5px 60px;
+    font-size: 160px;
+    color: black;
+}

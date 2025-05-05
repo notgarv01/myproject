@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+button{margin-top: 2%;
+    font-size: 70px;
+    margin-left: 14%;
+    padding: 0.3% 0.5%;
+}
+p input{
+    font-size: 70px;
+    border: black solid 9px;
+}
+#weightguide{
+    margin-left: 8%;
+    margin-top: 5%;
+}
+p{
+    margin: 2% 5%;
+   font-size: 80px;
+}
+#weightguide p{
+    font-size: 60px;
+}
+#weightguide h1{
+    font-size: 90px;
+}
+#results {
+    margin-left: 13%;
+    margin-top: 2%;
+    padding: 0% 3%;
+    height: 150px;
+    width: 100%;
+    font-size: 100px;
+    font-weight: 900;
+}
