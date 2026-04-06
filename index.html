@@ -3,95 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Links</title>
+  <title>Portfolio | Project Showcase</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    @keyframes slow-pan {
+      from { background-position: 0% 50%; }
+      to { background-position: 100% 50%; }
+    }
+    .animate-bg {
+      background-size: 200% 200%;
+      animation: slow-pan 15s linear infinite alternate;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-b from-black via-[#1a103d] to-black text-white min-h-screen flex flex-col items-center">
-  <h1 class="mt-8 text-5xl font-extrabold tracking-tight text-purple-400 drop-shadow-[0_0_10px_#a855f7]">My Projects</h1>
-  <div class="mt-10 w-4/5 max-w-4xl bg-[#1f1835]/80 backdrop-blur-md rounded-2xl overflow-hidden border border-purple-700/40 shadow-[0_0_20px_rgba(168,85,247,0.2)]">
-    <div class="flex border-b border-purple-700/40 bg-gradient-to-r from-purple-900/40 to-[#2a2047]/70">
-      <div class="p-4 w-2/5 text-center font-semibold text-purple-300 border-r border-purple-700/40">Project Name</div>
-      <div class="p-4 w-2/5 text-center font-semibold text-purple-300 border-r border-purple-700/40">Language Used</div>
-      <div class="p-4 w-1/5 text-center font-semibold text-purple-300">Links</div>
-    </div>
+<body class="bg-[#050505] text-slate-200 min-h-screen font-sans selection:bg-purple-500/30">
 
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">Background Changer</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS, JS</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://background-changer-gray.vercel.app/" class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
-
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">BMI CALCULATOR</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS, JS</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://bmi-calculator-umber-five.vercel.app/" class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">DIGITAL CLOCK</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS, JS</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://digital-clock-delta-gold.vercel.app/" class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">E-COMMERCE CART</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS, JS</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://e-commerece-cart.vercel.app/" class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">EXPENSE TRACKER</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS, JS</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://expense-tracker-tau-pearl-68.vercel.app/" class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">GUESS THE NUMBER GAME</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS, JS</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://guess-the-number-game-umber.vercel.app/" class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">TO-DO LIST</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS, JS</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://to-do-list-chi-eight-61.vercel.app/" class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">WEATHER APP</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS, JS</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://weather-app-xi-two-30.vercel.app/" class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">ORIELIX SLIDER</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://orielix-slider.vercel.app/" class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">RESPONSIVE WEB CARD</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS, BOOTSTRAP</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://web-card-alpha.vercel.app/" Class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
-    <div class="flex border-b border-[#3b2f5b] hover:bg-purple-900/20 transition">
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">RESPONSIVE PINTEREST CLONE</div>
-      <div class="w-2/5 text-center py-3 border-r border-[#3b2f5b] text-lg text-purple-100">HTML, CSS, TAILWIND, JS</div>
-      <div class="w-1/5 text-center py-3 text-lg">
-        <a href="https://pinterest-clone-five-tau.vercel.app/" Class="text-purple-400 hover:text-purple-200 hover:underline transition">Link ↗️</a>
-      </div>
-    </div>
+  <div class="fixed inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-purple-900/20 blur-[120px] rounded-full"></div>
+    <div class="absolute top-[40%] -right-[10%] w-[30%] h-[50%] bg-blue-900/10 blur-[120px] rounded-full"></div>
   </div>
+
+  <main class="relative z-10 max-w-6xl mx-auto px-6 py-16">
+    <header class="text-center mb-16">
+      <h1 class="text-6xl font-black tracking-tighter bg-gradient-to-r from-white via-purple-400 to-purple-600 bg-clip-text text-transparent drop-shadow-sm">
+        Selected Works
+      </h1>
+      <p class="mt-4 text-slate-400 text-lg font-medium">A collection of web experiments and applications</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <script>
+        const projects = [
+          { name: "Background Changer", tech: "HTML, CSS, JS", link: "https://background-changer-gray.vercel.app/" },
+          { name: "BMI Calculator", tech: "HTML, CSS, JS", link: "https://bmi-calculator-umber-five.vercel.app/" },
+          { name: "Digital Clock", tech: "HTML, CSS, JS", link: "https://digital-clock-delta-gold.vercel.app/" },
+          { name: "E-Commerce Cart", tech: "HTML, CSS, JS", link: "https://e-commerece-cart.vercel.app/" },
+          { name: "Expense Tracker", tech: "HTML, CSS, JS", link: "https://expense-tracker-tau-pearl-68.vercel.app/" },
+          { name: "Guess The Number", tech: "HTML, CSS, JS", link: "https://guess-the-number-game-umber.vercel.app/" },
+          { name: "To-Do List", tech: "HTML, CSS, JS", link: "https://to-do-list-chi-eight-61.vercel.app/" },
+          { name: "Weather App", tech: "HTML, CSS, JS", link: "https://weather-app-xi-two-30.vercel.app/" },
+          { name: "Orielix Slider", tech: "HTML, CSS", link: "https://orielix-slider.vercel.app/" },
+          { name: "Web Card", tech: "HTML, CSS, Bootstrap", link: "https://web-card-alpha.vercel.app/" },
+          { name: "Pinterest Clone", tech: "Tailwind, JS", link: "https://pinterest-clone-five-tau.vercel.app/" }
+          { name: "Event Management System", tech: "React, Tailwind, JS", link: "https://emsmine.vercel.app/" }
+        ];
+
+        document.write(projects.map(p => `
+          <div class="group relative bg-[#111] border border-white/10 p-8 rounded-3xl hover:border-purple-500/50 transition-all duration-500 hover:-translate-y-2">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
+            
+            <div class="relative">
+              <span class="text-xs font-bold tracking-widest text-purple-500 uppercase">${p.tech}</span>
+              <h3 class="text-2xl font-bold mt-2 text-white group-hover:text-purple-300 transition-colors">${p.name}</h3>
+              
+              <div class="mt-8 flex items-center justify-between">
+                <a href="${p.link}" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white transition-colors">
+                  View Project 
+                  <svg class="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        `).join(''));
+      </script>
+
+    </div>
+
+    <footer class="mt-24 text-center border-t border-white/5 pt-8">
+      <p class="text-slate-500 text-sm">Designed with focus & code.</p>
+    </footer>
+  </main>
+
 </body>
+</html>
