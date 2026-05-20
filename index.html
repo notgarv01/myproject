@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Project Showcase</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Tailwind v4 CDN -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   <style>
     @keyframes slow-pan {
       from { background-position: 0% 50%; }
@@ -16,66 +17,110 @@
     }
   </style>
 </head>
-<body class="bg-[#050505] text-slate-200 min-h-screen font-sans selection:bg-purple-500/30">
+<body class="bg-[#050505] text-slate-200 min-h-screen font-sans selection:bg-purple-500/30 antialiased">
 
-  <div class="fixed inset-0 overflow-hidden pointer-events-none">
-    <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-purple-900/20 blur-[120px] rounded-full"></div>
-    <div class="absolute top-[40%] -right-[10%] w-[30%] h-[50%] bg-blue-900/10 blur-[120px] rounded-full"></div>
+  <!-- Ambient Glowing Backgrounds -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div class="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-purple-900/15 blur-[140px] rounded-full"></div>
+    <div class="absolute top-[30%] -right-[10%] w-[40%] h-[60%] bg-blue-900/10 blur-[140px] rounded-full"></div>
   </div>
 
-  <main class="relative z-10 max-w-6xl mx-auto px-6 py-16">
-    <header class="text-center mb-16">
-      <h1 class="text-6xl font-black tracking-tighter bg-gradient-to-r from-white via-purple-400 to-purple-600 bg-clip-text text-transparent drop-shadow-sm">
+  <main class="relative z-10 max-w-6xl mx-auto px-6 py-20">
+    <!-- Header Section -->
+    <header class="text-center mb-20">
+      <h1 class="text-5xl md:text-6xl font-black tracking-tight bg-gradient-to-r from-white via-slate-200 to-purple-400 bg-clip-text text-transparent drop-shadow-sm">
         Selected Works
       </h1>
-      <p class="mt-4 text-slate-400 text-lg font-medium">A collection of web experiments and applications</p>
+      <p class="mt-4 text-slate-400 text-lg font-light tracking-wide max-w-md mx-auto">
+        A curated collection of web applications and full-stack architecture.
+      </p>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <script>
-        const projects = [
-          { name: "Background Changer", tech: "HTML, CSS, JS", link: "https://background-changer-gray.vercel.app/" },
-          { name: "BMI Calculator", tech: "HTML, CSS, JS", link: "https://bmi-calculator-umber-five.vercel.app/" },
-          { name: "Digital Clock", tech: "HTML, CSS, JS", link: "https://digital-clock-delta-gold.vercel.app/" },
-          { name: "E-Commerce Cart", tech: "HTML, CSS, JS", link: "https://e-commerece-cart.vercel.app/" },
-          { name: "Expense Tracker", tech: "HTML, CSS, JS", link: "https://expense-tracker-tau-pearl-68.vercel.app/" },
-          { name: "Guess The Number", tech: "HTML, CSS, JS", link: "https://guess-the-number-game-umber.vercel.app/" },
-          { name: "To-Do List", tech: "HTML, CSS, JS", link: "https://to-do-list-chi-eight-61.vercel.app/" },
-          { name: "Weather App", tech: "HTML, CSS, JS", link: "https://weather-app-xi-two-30.vercel.app/" },
-          { name: "Orielix Slider", tech: "HTML, CSS", link: "https://orielix-slider.vercel.app/" },
-          { name: "Web Card", tech: "HTML, CSS, Bootstrap", link: "https://web-card-alpha.vercel.app/" },
-          { name: "Pinterest Clone", tech: "Tailwind, JS", link: "https://pinterest-clone-five-tau.vercel.app/" },
-          { name: "Event Management System", tech: "React, Tailwind, JS", link: "https://emsmine.vercel.app/" },
-          { name: "Food Delivery App", tech: "MERN, TAILWIND", link: "https://foodie-2-frontend.vercel.app/" },
-          { name: "E-commerce app", tech: "MERN, TAILWIND", link: "https://gupta-sales-frontend.vercel.app/" }
-        ];
-
-        document.write(projects.map(p => `
-          <div class="group relative bg-[#111] border border-white/10 p-8 rounded-3xl hover:border-purple-500/50 transition-all duration-500 hover:-translate-y-2">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl"></div>
-            
-            <div class="relative">
-              <span class="text-xs font-bold tracking-widest text-purple-500 uppercase">${p.tech}</span>
-              <h3 class="text-2xl font-bold mt-2 text-white group-hover:text-purple-300 transition-colors">${p.name}</h3>
-              
-              <div class="mt-8 flex items-center justify-between">
-                <a href="${p.link}" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white transition-colors">
-                  View Project 
-                  <svg class="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        `).join(''));
-      </script>
-
+    <!-- Grid Container -->
+    <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Injected via JavaScript -->
     </div>
 
-    <footer class="mt-24 text-center border-t border-white/5 pt-8">
-      <p class="text-slate-500 text-sm">Designed with focus & code.</p>
+    <!-- Footer -->
+    <footer class="mt-32 text-center border-t border-white/5 pt-8">
+      <p class="text-slate-600 text-xs tracking-widest uppercase">Designed with focus & code.</p>
     </footer>
   </main>
 
+  <script>
+    const projects = [
+      { 
+        name: "Event Management System", 
+        tech: ["React", "Tailwind", "JS"], 
+        link: "https://emsmine.vercel.app/",
+        type: "Frontend"
+      },
+      { 
+        name: "Food Delivery App", 
+        tech: ["MERN", "Tailwind"], 
+        link: "https://foodie-2-frontend.vercel.app/",
+        type: "Full Stack"
+      },
+      { 
+        name: "E-commerce App", 
+        tech: ["MERN", "Tailwind"], 
+        link: "https://gupta-sales-frontend.vercel.app/",
+        type: "Full Stack"
+      }
+    ];
+
+    const gridContainer = document.getElementById('project-grid');
+
+    gridContainer.innerHTML = projects.map(p => {
+      // Determine badge colors based on stack type
+      const isFullStack = p.type === "Full Stack";
+      const typeBadgeStyle = isFullStack 
+        ? "bg-purple-500/10 text-purple-400 border-purple-500/20" 
+        : "bg-blue-500/10 text-blue-400 border-blue-500/20";
+
+      // Render tags inside arrays beautifully
+      const tagsHTML = p.tech.map(t => 
+        `<span class="text-[10px] font-semibold tracking-wider uppercase px-2.5 py-1 bg-white/5 border border-white/10 rounded-md text-slate-300">${t}</span>`
+      ).join('');
+
+      return `
+        <div onclick="window.open('${p.link}', '_blank')" class="group relative bg-[#0a0a0a] border border-white/5 p-8 rounded-3xl hover:border-purple-500/30 transition-all duration-500 hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between min-h-[220px]">
+          
+          <!-- Card Backdrop Glow -->
+          <div class="absolute inset-0 bg-gradient-to-b from-purple-500/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+          
+          <div class="relative z-10">
+            <!-- Header Row within Card -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex flex-wrap gap-1.5">
+                ${tagsHTML}
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 border rounded-full ${typeBadgeStyle}">
+                ${p.type}
+              </span>
+            </div>
+            
+            <!-- Project Title -->
+            <h3 class="text-xl font-bold text-slate-100 group-hover:text-white transition-colors tracking-tight line-clamp-2">
+              ${p.name}
+            </h3>
+          </div>
+          
+          <!-- Bottom Action Row -->
+          <div class="relative z-10 mt-8 pt-4 border-t border-white/[0.02] flex items-center justify-between">
+            <span class="inline-flex items-center gap-2 text-xs font-medium text-slate-400 group-hover:text-purple-400 transition-colors">
+              Launch Application 
+            </span>
+            <div class="p-2 bg-white/5 rounded-xl border border-white/5 text-slate-400 group-hover:text-white group-hover:bg-purple-500/20 group-hover:border-purple-500/30 transition-all duration-300">
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-45" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      `;
+    }).join('');
+  </script>
 </body>
 </html>
